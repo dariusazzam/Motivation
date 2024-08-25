@@ -1,0 +1,61 @@
+print("Halo kamu! >_<")
+print("Sebelumnya aku akan mengajukan beberapa pertanyaan nih, kamu bisa menjawabnya dengan mengetik kalimat/kata sesuai dengan panduan yang akan diberikan! (dengan catatan ketik semua jawaban kamu dengan huruf kecil ya!😁)")
+
+def ready():
+    ask_ready = input("Apakah kamu sudah siap?👊🏻 (cukup jawab 'ya' atau 'tidak') ")
+    while ask_ready != "ya" and ask_ready != "tidak":
+        ask_ready = input("Apakah kamu sudah siap?👊🏻 (cukup jawab 'ya' atau 'tidak') ")
+    if ask_ready == "ya":
+        return input("Oke sip, sebelumnya cewek apa cowok nih?🤔 ")
+    elif ask_ready == "tidak":
+        input("Wah... Kalau gitu kamu tarik nafas dulu yak, rileksin dirimu dulu.🥺 Sudah? (jawab 'sudah') ")
+        return input("Oke sip, sebelumnya cewek apa cowok nih?🤔 (jawab 'cewek' atau 'cowok') ")
+
+# Memanggil fungsi ready dan menyimpan hasilnya di variabel gender_ask
+gender_ask = ready()
+
+def name(gender_ask):
+    if gender_ask == "cewek":
+        return input(f"Wah ada {gender_ask} cantik nih.🤩 Nama panggilannya siapa kalau boleh tahu? ")
+    elif gender_ask == "cowok":
+        return input(f"Wah ada {gender_ask} ganteng nih.🤩 Nama panggilannya siapa kalau boleh tahu? ")
+
+# Memanggil fungsi name dengan parameter gender_ask
+name_ask = name(gender_ask)
+
+def gift():
+  if gender_ask == "cewek":
+    return input(f"Halo {name_ask} cantik! Salam kenal ya😁 Semoga kamu selalu sehat!💪🏻 By the way, aku mau ngasih kamu hadiah nih, cukup ketik satu angka saja di antara angka 1 atau 2 atau 3🎁😼 ")
+  elif gender_ask == "cowok":
+    return input(f"Halo {name_ask} ganteng! Salam kenal ya😁 Semoga kamu selalu sehat!💪🏻 By the way, aku mau ngasih kamu hadiah nih, cukup ketik satu angka saja di antara angka 1 atau 2 atau 3🎁😼 ")
+  while satuduatiga != "1" and satuduatiga != "2" and satuduatiga != "3":
+    if gender_ask == "cewek":
+      return input(f"Halo {name_ask} cantik! Salam kenal ya😁 Semoga kamu selalu sehat!💪🏻 By the way, aku mau ngasih kamu hadiah nih, cukup ketik satu angka saja di antara angka 1 atau 2 atau 3🎁😼 ")
+    elif gender_ask == "cowok":
+      return input(f"Halo {name_ask} ganteng! Salam kenal ya😁 Semoga kamu selalu sehat!💪🏻 By the way, aku mau ngasih kamu hadiah nih, cukup ketik satu angka saja di antara angka 1 atau 2 atau 3🎁😼 ")    
+
+gift_ask = gift()
+
+def surprise():
+  if gift_ask == "1":
+    print(f"Hai, {name_ask}😃 Terima kasih ya! Kamu sudah memperjuangkan dirimu sampai saat ini. Bukan perihal yang mudah loh untuk mencapai masa kini🤯 Tentu butuh effort yang super duper banyak💪🏻 Dan sekarang kamu berhasil loh?! Selamat ya!!!")
+    
+    for satu in range(10):
+      print(f"Terima kasih telah berjuang! Kamu hebat, {name_ask}🌟")
+      
+  elif gift_ask == "2":
+    print(f"Hai, {name_ask}😃 Kamu pasti baru capek dan banyak hal yang sedang kamu pikirin☹️ It's okay, {name_ask}🫂 Yang perlu kamu ingat selalu adalah bahwa capekmu hari ini adalah suksesmu di masa nanti. Keep it going okay!!! Selalu percaya pada proses😎🤏🏻")
+   
+    for dua in range(10):
+      print(f"Percayalah, kamu pasti bisa! Terus semangat, {name_ask}🦸🏻‍♂️")
+      
+  elif gift_ask == "3":
+    print(f"Hai, {name_ask}😃 Loh ada apa? Kamu sedang tidak yakin dengan dirimu? Kamu sedang merasa apapun yang kamu lalukan sampai saat ini adalah sia-sia? atau Kamu sedang dihadapkan dengan suatu masalah?☹️ Hai, tau gak bahwa Tuhan gapernah memberi ujian kepada hamba-Nya ujian yang sungguh berat bila hamba-Nya tidak bisa melewatinya loh🤩 So yakinlah dengan apa yang kau anggap bisa! Lakukanlah apa yang kamu percaya selama itu yang terbaik bagimu🏆 Jalani prosesnya, {name_ask}! Sungguh kamu tidak mengetahui apa yang Tuhan ketahui🙇🏻‍♂️ Hal indah terkadang datang dari sebuah penderitaan. So, mari kita lawan penderitaan itu, {name_ask}💪🏻😼")
+    
+    for tiga in range(10):
+      print(f"Lawan penderitaanmu itu. Kamu bisa, {name_ask}😾👊🏻")
+    
+surprise()
+
+print("Thank you for visiting")
+print("coding by @darius.azzam 👾")
